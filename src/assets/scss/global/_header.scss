@@ -1,0 +1,70 @@
+.menu {
+  li {
+    a{
+      &:hover {
+        background-color: $primary-color;
+        color: $white;
+      }
+
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.nav {
+  font-weight: bold;
+}
+
+.small-nav {
+  background-color: $primary-color;
+}
+
+.button-container {
+  text-align:center;
+}
+
+.top-bar{
+  background-color: $white;
+
+  ul{
+      background-color: $white;
+  }
+}
+
+.menu-icon-container {
+  float: left;
+  margin: 0 auto;
+}
+
+/*
+.page {
+  @include xy-grid-container;
+  @include xy-grid(vertical, false);
+}
+
+.header {
+  @include xy-cell(4, $gutter-position: top bottom, $vertical: true);
+  background-color: $light-gray;
+
+  .logos {
+    @include xy-grid();
+
+    .washu-logo {
+      @include xy-cell(1.5);
+    }
+    .goldfarb-logo {
+      @include xy-cell(1);
+    }
+  }
+}
+
+.content {
+  @include xy-cell(7, $gutter-position: top bottom, $vertical: true);
+}
+
+.footer {
+  @include xy-cell(3, $gutter-position: top bottom, $vertical: true);
+}
+*/
+
