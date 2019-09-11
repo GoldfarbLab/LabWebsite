@@ -14,6 +14,14 @@
 
 .nav {
   font-weight: bold;
+
+  @include breakpoint(medium) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: -1;
+  }
 }
 
 .small-nav {
@@ -37,6 +45,36 @@
   margin: 0 auto;
 }
 
+.logos {
+  @include xy-grid();
+
+  .washu-logo {
+    @include xy-cell(0);
+
+    @include breakpoint(medium) {
+      @include xy-cell(2);
+    }
+
+    @include breakpoint(large) {
+      width:9em;
+    }
+  }
+  .goldfarb-logo {
+
+    @include xy-cell(4);
+    padding:0px !important;
+    margin:0px !important;
+
+    @include breakpoint(medium) {
+      @include xy-cell(4);
+    }
+
+    @include breakpoint(xlarge) {
+      width:23em;
+    }
+  }
+}
+
 /*
 .page {
   @include xy-grid-container;
@@ -47,16 +85,7 @@
   @include xy-cell(4, $gutter-position: top bottom, $vertical: true);
   background-color: $light-gray;
 
-  .logos {
-    @include xy-grid();
 
-    .washu-logo {
-      @include xy-cell(1.5);
-    }
-    .goldfarb-logo {
-      @include xy-cell(1);
-    }
-  }
 }
 
 .content {
